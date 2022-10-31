@@ -1,0 +1,18 @@
+program utsdua;
+uses crt;
+var
+        nama1,nama2:string;
+        suhu:integer;
+        reamur,kelvin,farenheit:real;
+begin
+        clrscr;
+        write('Masukkan nama awal: ');
+        readln(nama1);
+        write('Masukkan nama akhir: ');
+        readln(nama2);
+        write('Masukkan suhu hari ini dalam celcius: ');
+        readln(suhu); reamur:=4/5*suhu; kelvin:=273+suhu; farenheit:= 9/5*suhu+32;
+        writeln('Halo ', nama1,' ', nama2,', hari ini bersuhu ', reamur:5:1, ' reamur / ', kelvin:5:1,' kelvin /', farenheit:5:1, ' farenheit');
+        readln;
+
+end.
